@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorycars</title>
+</head>
+<body>
+    <h1> Car Companies </h1>
+
+        {% for make in makes %}
+            <a href="{% url 'get_car' make.pk %}"> {{ make.name }}</a><hr>
+        {% endfor %}
+</body>
+</html>

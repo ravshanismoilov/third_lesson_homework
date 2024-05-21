@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+    <h1> Info </h1>
+
+        <img src="{{ info.image.url }}"><hr>
+        Model: {{ info.model }}<br>
+        Color: {{ info.color }}<br>
+        Year: {{ info.year }}<br>
+        Km: {{ info.km }}<br>
+        price: {{ info.price }}$<hr>
+        <button><a href="{% url 'get_make' %}"> Home </a></button>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+    <h1> Category Books </h1>
+
+        {% for categorey in categories %}
+            <a href="{% url 'get_books' categorey.pk %}"> {{ categorey.name }}</a><br><hr>
+        {% endfor %}
+
+</body>
+</html>

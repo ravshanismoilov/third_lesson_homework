@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+
+            <img src="{{ p.image.url }}"/><br>
+            Price: {{ p.price }}<br>
+            Make: {{ p.make }}<br>
+            Category: {{ p.category }}<br>
+            Body: {{ p.body }}<hr/>
+        <button><a href="{% url 'get_info' %}"> Home </a></button><br>
+
+</body>
+</html>
